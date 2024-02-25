@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+}
+
+h1{
+  font-size: 50px;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.container{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game{
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.boxes{
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 10%;
+  border: none;
+  border: 3px solid black;
+}
+
+.boxes:first-child{
+  background-color: green;
+}
+
+.boxes:nth-child(2){
+  background-color: blue;
+}
+
+.boxes:nth-child(3){
+  background-color: yellow;
+}
+
+.boxes:nth-child(4){
+  background-color: red;
+}
+
+.boxes:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
